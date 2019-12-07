@@ -1,18 +1,22 @@
-! colors
+! colors definitions
+
 ! polar night
 #define nord0 #2E3440
 #define nord1 #3B4252
 #define nord2 #434C5E
 #define nord3 #4C566A
+
 ! snow storm
 #define nord4 #D8DEE9
 #define nord5 #E5E9F0
 #define nord6 #ECEFF4
+
 ! frost
 #define nord7 #8FBCBB
 #define nord8 #88C0D0
 #define nord9 #81A1C1
 #define nord10 #5E81AC
+
 ! aurora
 #define nord11 #BF616A
 #define nord12 #D08770
@@ -20,7 +24,7 @@
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
 
-
+! color sets
 *.foreground:   nord4
 *.background:   nord0
 *.cursorColor:  nord4
@@ -57,7 +61,6 @@ rofi.color-urgent: argb:00000000, #f43753, argb:00000000, argb:00000000, #e29a49
 rofi.color-active: argb:00000000, #49bbfb, argb:00000000, argb:00000000, #e29a49
 rofi.kb-cancel: Escape,Alt+F1
 
-
 ! URxvt
 URxvt*saveline: 15000
 URxvt*termName: rxvt-256color
@@ -66,7 +69,7 @@ URxvt*depth: 32
 URxvt*background: [98]nord0
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
-URxvt*internalBorder: 0
+URxvt*internalBorder: 5
 URxvt*externalBorder: 0
 URxvt*letterSpace: -1
 URxvt.font: xft:MesloLGS NF:size=8
