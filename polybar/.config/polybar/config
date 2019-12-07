@@ -14,7 +14,7 @@ fixed-center = false
 background = ${colors.custom_background_dark}
 foreground = ${colors.custom_foreground}
 
-font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
+font-0 = Iosevka Term:fontformat=truetype:pixelsize=8.5:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=14:antialias=true;3
 font-2 = Material Icons:fontformat=truetype:pixelsize=10:antialias=true;3
 
@@ -218,7 +218,7 @@ label-background = ${colors.custom_background_dark}
 type     = internal/date
 interval = 1
 
-time     = %H:%M
+time     = %I:%M %p
 time-alt = %H:%M:%S
 
 format-prefix            = %{T3}%{T-}
