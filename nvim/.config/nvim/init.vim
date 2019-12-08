@@ -7,6 +7,10 @@ Plug 'scrooloose/syntastic'
 Plug 'shougo/deoplete.nvim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'powerline/powerline'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'zchee/deoplete-clang'
+
 
 call plug#end()
 
@@ -58,3 +62,16 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+
+" completions
+let g:deoplete#enable_at_startup = 1
+
+" mappings
+
+inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+
+map <C-UP> <C-W><Up>
