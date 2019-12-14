@@ -268,11 +268,11 @@ label-volume-background = ${colors.custom_primary}
 
 format-muted-prefix            = %{T3}%{T-}
 format-muted-prefix-foreground = ${colors.custom_warn}
-format-muted-prefix-background = ${colors.custom_background_dark}
+format-muted-prefix-background = ${colors.custom_primary}
 
 label-muted            = " %percentage:3%%"
-label-muted-foreground = ${colors.custom_foreground}
-label-muted-background = ${colors.custom_background_dark}
+label-muted-foreground = ${colors.custom_warn}
+label-muted-background = ${colors.custom_primary}
 
 [module/battery]
 type    = internal/battery
