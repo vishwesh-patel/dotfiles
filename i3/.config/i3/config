@@ -47,7 +47,7 @@ bindsym Control+space exec --no-startup-id rofi_run -r
 
 # core
 bindsym $Mod+w          exec --no-startup-id exo-open --launch WebBrowser
-bindsym $Mod+f          exec --no-startup-id exo-open --launch FileManager
+bindsym $Mod+f          exec --no-startup-id ranger 
 bindsym $Mod+t          exec --no-startup-id exo-open --launch TerminalEmulator
 bindsym $Mod+Return     exec --no-startup-id exo-open --launch TerminalEmulator
 bindsym Control+Shift+t exec --no-startup-id exo-open --launch TerminalEmulator
