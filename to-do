@@ -1,0 +1,68 @@
+nvim:
+    - prettier
+    - key bindings
+    - fix background and base color
+    - fast plugins to quick setup
+    - kite for python autocomplete
+
+tmux:
+    - full tmux config required.
+    - has not been installed
+    - look into tmux plugins
+
+i3:
+    - remapped stupid keybindings to comfy binds
+    - autostart needs work
+    - refactor
+    - remap rofi bindings to dmenu or install and configure rofi
+    - set default layouts for dev setup
+    - set good border around focussed window (set after compton changes ofc)
+
+URXVT:
+    - set a base color scheme
+        - needs major tweaking
+    - find ideal gap size (needs to be corraleted with i3 gaps)
+    - bash to zsh maybe
+    - plugins
+    - alias list import
+    - generate base scripts for poly bar
+
+Polybar:
+    - make bar
+    - current fav fonts isntalled
+    - pick color scheme (probably match background of terminal)
+    - pick icons and include them
+    - decide ideal module location (dont do powerline theme this time since i want something new)
+    - try to incorporate scripts into it
+
+compton:
+    - build the round fork for it
+    - round out corners and build out transperency for unfocussed panes
+
+other:
+    - browsers
+        - brave
+        - surf
+        - fix chromium
+
+    - text editors
+        - nvim
+        - fix atom
+        - code (server base plugins)
+    
+    - soft tools
+        - free office
+        - libre office
+        - open office
+        - zathura
+        - gimp
+        - kvedine
+
+    - build tools
+        - ninja
+        - meson
+        - lxdb library
+        - full cmake library
+
+
+
