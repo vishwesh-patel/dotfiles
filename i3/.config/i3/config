@@ -41,7 +41,7 @@ bindsym Mod1+q kill
 bindsym Mod1+F4 kill
 
 # launchers
-bindsym $mod+d exec --no-startup-id dmenu-recency
+bindsym $mod+d exec --no-startup-id dmenu-run
 
 # core
 bindsym $Mod+Ctrl+b exec terminal -e 'bmenu'
@@ -176,8 +176,8 @@ for_window [urgent="latest"] focus
 focus_on_window_activation   focus
 
 # container layout
-bindsym $Mod+semicolon split h
-bindsym $Mod+v split v
+bindsym $Mod+semicolon splith
+bindsym $Mod+v splitv
 bindsym $Mod+Shift+t layout tabbed
 bindsym $Mod+Shift+s layout stacking
 bindsym $Mod+Shift+h layout toggle split

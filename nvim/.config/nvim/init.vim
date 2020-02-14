@@ -2,6 +2,7 @@
 call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
 Plug 'shougo/deoplete.nvim'
@@ -30,7 +31,7 @@ set wildmode=longest,list   " get bash-like tab completions
 set cc=0                  " set an 80 column border for good coding style
 set number relativenumber
 colo dracula
-let g:airline_theme='dracula'
+let g:airline_theme='behelit'
 hi Normal guibg=NONE ctermbg=NONE
 
 " air-line
