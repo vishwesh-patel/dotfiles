@@ -45,8 +45,7 @@ Xft.rgba: rgb
 
 ! ===== urxvt =====
 URxvt.perl-ext-common: default,matcher,resize-font
-as
-URxvt*font: xft:Hack Nerd Font Mono:size=10
+URxvt*font: xft:Hack Nerd Font Mono:size=14
 URxvt.scrollBar: off
 URxvt.internalBorder: 50
 

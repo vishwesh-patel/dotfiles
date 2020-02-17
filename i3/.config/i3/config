@@ -26,10 +26,12 @@ set $right l
 
 # run with reload
 exec_always --no-startup-id xrdb -load ~/.Xresources
+exec_always --no-startup-id nitrogen --restore; sleep 1; compton -b
+
 
 # run once
 exec --no-startup-id xfsettingsd
-exec --no-startup-id polybar -r top
+exec --no-startup-id polybar -r mybar
 
 
 
@@ -41,7 +43,7 @@ bindsym Mod1+q kill
 bindsym Mod1+F4 kill
 
 # launchers
-bindsym $mod+d exec --no-startup-id dmenu-run
+bindsym $mod+d exec --no-startup-id dmenu_run
 
 # core
 bindsym $Mod+Ctrl+b exec terminal -e 'bmenu'
@@ -58,17 +60,12 @@ bindsym Control+Shift+t exec --no-startup-id exo-open --launch TerminalEmulator
 # bindsym Print exec --no-startup-id "scrot '%S.png' -e 'mv $f $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png ; feh $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png'"
 
 # audio
-bindsym XF86AudioPlay        exec --no-startup-id playerctl play-pause
-bindsym XF86AudioNext        exec --no-startup-id playerctl next
-bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
-bindsym XF86AudioStop        exec --no-startup-id playerctl stop
-bindsym XF86AudioMute        exec --no-startup-id pamixer -t
-bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 2
-bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 2
+exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m terminal -e 'alsamixer'
 
 # backlight
-bindsym XF86MonBrightnessUp   exec --no-startup-id xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86MonBrightnessUp   exec --no-startup-id "xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10"
 
 ###########          Workspace Bindings          ###############
 
@@ -176,18 +173,23 @@ for_window [urgent="latest"] focus
 focus_on_window_activation   focus
 
 # container layout
-bindsym $Mod+semicolon splith
-bindsym $Mod+v splitv
+bindsym $Mod+semicolon split h
+bindsym $Mod+v split v
 bindsym $Mod+Shift+t layout tabbed
 bindsym $Mod+Shift+s layout stacking
-bindsym $Mod+Shift+h layout toggle split
+bindsym $Mod+Shift+semicolon layout toggle split
 
 default_orientation horizontal
 
 ###############      Border & Gaps     ###############
 
-new_window normal
-new_float  normal
+border_radius 15
+
+default_border pixel 0
+default_floating_border pixel 0
+
+new_window none
+new_float  none
 
 hide_edge_borders both
 

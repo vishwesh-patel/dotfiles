@@ -12,7 +12,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zchee/deoplete-clang'
 Plug 'dracula/vim'
-
+Plug 'ycm-core/YouCompleteMe'
+Plug 'sickill/vim-monokai'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'lilydjwg/colorizer'
 call plug#end()
 
 " basics
@@ -30,8 +33,8 @@ set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 set cc=0                  " set an 80 column border for good coding style
 set number relativenumber
-colo dracula
-let g:airline_theme='behelit'
+" colo dracula
+" let g:airline_theme='dracula'
 hi Normal guibg=NONE ctermbg=NONE
 
 " air-line
