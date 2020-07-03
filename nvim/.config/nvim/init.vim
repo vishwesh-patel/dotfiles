@@ -33,8 +33,8 @@ set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 set cc=0                  " set an 80 column border for good coding style
 set number relativenumber
-" colo dracula
-" let g:airline_theme='dracula'
+ colo dracula
+ let g:airline_theme='dracula'
 hi Normal guibg=NONE ctermbg=NONE
 
 " air-line

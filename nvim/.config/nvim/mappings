@@ -1,0 +1,52 @@
+This file has a list of all vim mappings used in my current vim config. This
+file is strictly for reference and for checking remaps when adjusting vim
+mappings.
+
+Movement:
+    - h,j,k,l               % allows for directional movement by 1
+    - gg                    % move to top of file
+    - G                     % move to bottom of file
+    - H,L,M                 % move cursor to top, bottom, middle of the screen
+    - w,b                   % navigate by start of small word
+    - W,B                   % navigate by start of big word
+    - e,ge                  % navigate by end of word
+    - ^,g_                  % navigate to first, last none whitespace charactor of line
+    - 0,$                   % navigate to first, last charactor of line
+    - C-d,C-u               % half page scroll
+    - C-f,C-b               % full page scroll
+    - zt,zb,zz              % move current location to top, bottom, middle of screen
+    - n%                    % move to nth percentage of file
+    - ngg                   % move to nth line number
+    - n(h,j,k,l,w,b,e,ge)   % performs same movement but n times
+
+Insert:
+    - i,a                   % insert before, after cursor
+    - I,A                   % insert start, end of line
+    - O,o                   % insert new line above, below current line
+
+Visual:
+    - v                     % charactor selection
+    - V                     % line selection
+    - C-v                   % block selection
+
+Editing:
+    - /                     % find 
+    - c                     % change
+    - d                     % delete/cut
+    - y                     % yank
+    - p                     % paste
+    - s                     % substitute
+    - x                     % charactor delete/cut
+
+Combination of keys
+    - Editing operand + movement
+        - ie. cw, dw, yw, ci", yi(, d5w
+    - Editing operand * 2 (line base edit)
+        - cc, dd, yy
+
+Registers:
+    - q + register          % store macro in register
+    - m + register          % store mark in register (small mark is local, large mark is global)
+    - "register + y         % yank into registor
+    - "registor + p         % paste from registor
+    - @register             % perform registor macro or move to registor mark
